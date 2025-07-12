@@ -1,0 +1,26 @@
+{
+  "url": "https://www.mondefootball.fr/calendrier/esp-primera-division/",
+  "page_structure": {
+    "title": null,
+    "total_elements": 8,
+    "tables": 0,
+    "divs": 0,
+    "classes_found": [],
+    "ids_found": [],
+    "potential_match_containers": []
+  },
+  "match_patterns": {
+    "score_patterns": [],
+    "team_name_patterns": [],
+    "date_patterns": [],
+    "potential_selectors": []
+  },
+  "table_structure": [],
+  "optimal_selectors": {
+    "match_containers": [],
+    "team_names": [],
+    "scores": [],
+    "dates": [],
+    "recommendations": []
+  }
+}

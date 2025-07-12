@@ -1,0 +1,46 @@
+{
+  "total_matches": 1518,
+  "total_seasons": 2,
+  "total_teams": 20,
+  "matches_per_season": {
+    "2021": 759,
+    "2022": 759
+  },
+  "results_distribution": {
+    "counts": {
+      "A": 471,
+      "D": 391,
+      "H": 656
+    },
+    "percentages": {
+      "A": 31.03,
+      "D": 25.76,
+      "H": 43.21
+    }
+  },
+  "avg_goals_per_match": 2.97,
+  "max_goals_in_match": 8,
+  "top_home_teams": {
+    "Athletic Bilbao": 49,
+    "Sevilla": 39,
+    "Mallorca": 39,
+    "Granada": 38,
+    "Levante": 37,
+    "Villarreal": 34,
+    "Atlético Madrid": 34,
+    "Valencia": 33,
+    "Getafe": 33,
+    "Espanyol": 33
+  },
+  "performance_metrics": {
+    "total_processed": 760,
+    "duplicates_avoided": 2,
+    "successful_inserts": 758,
+    "processing_time": 0.036115169525146484,
+    "last_update": "2025-07-12T12:18:52.245344"
+  },
+  "data_range": {
+    "first_match": "2021-08-15",
+    "last_match": "2023-05-01"
+  }
+}
