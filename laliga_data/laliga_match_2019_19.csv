@@ -1,0 +1,11 @@
+id,season,matchday,date,home_team,away_team,home_goals,away_goals,result,home_position,away_position,home_scored_and_conceded_goals,away_scored_and_conceded_goals,detail_link
+1,2019/2020,19,2020-01-03,Real Valladolid,CD Leganés,2,2,X,14,19,17:23,16:30,https://www.mondefootball.fr/resume/primera-division-2019-2020-real-valladolid-cd-leganes/
+2,2019/2020,19,2020-01-03,Sevilla FC,Athletic Club,1,1,X,4,8,24:18,20:13,https://www.mondefootball.fr/resume/primera-division-2019-2020-sevilla-fc-athletic-bilbao/
+3,2019/2020,19,2020-01-04,Valencia CF,SD Eibar,1,0,1,6,16,29:25,18:29,https://www.mondefootball.fr/resume/primera-division-2019-2020-valencia-cf-sd-eibar/
+4,2019/2020,19,2020-01-04,Getafe CF,Real Madrid,0,3,2,7,2,26:20,36:12,https://www.mondefootball.fr/resume/primera-division-2019-2020-getafe-cf-real-madrid/
+5,2019/2020,19,2020-01-04,Atlético Madrid,Levante UD,2,1,1,3,11,22:12,26:29,https://www.mondefootball.fr/resume/primera-division-2019-2020-atletico-madrid-levante-ud/
+6,2019/2020,19,2020-01-04,Espanyol Barcelona,FC Barcelona,2,2,X,20,1,14:36,49:23,https://www.mondefootball.fr/resume/primera-division-2019-2020-espanyol-barcelona-fc-barcelona/
+7,2019/2020,19,2020-01-05,Granada CF,RCD Mallorca,1,0,1,10,18,25:25,18:33,https://www.mondefootball.fr/resume/primera-division-2019-2020-granada-cf-rcd-mallorca/
+8,2019/2020,19,2020-01-05,Real Sociedad,Villarreal CF,1,2,2,5,9,33:25,33:26,https://www.mondefootball.fr/resume/primera-division-2019-2020-real-sociedad-villarreal-cf/
+9,2019/2020,19,2020-01-05,CD Alavés,Real Betis,1,1,X,15,13,20:29,26:32,https://www.mondefootball.fr/resume/primera-division-2019-2020-cd-alaves-real-betis/
+10,2019/2020,19,2020-01-05,RC Celta,CA Osasuna,1,1,X,17,12,16:29,26:25,https://www.mondefootball.fr/resume/primera-division-2019-2020-celta-vigo-ca-osasuna/

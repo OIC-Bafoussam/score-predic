@@ -1,0 +1,11 @@
+id,season,matchday,date,home_team,away_team,home_goals,away_goals,result,home_position,away_position,home_scored_and_conceded_goals,away_scored_and_conceded_goals,detail_link
+1,2020/2021,1,2020-09-12,SD Eibar,RC Celta,0,0,X,13,12,0:0,0:0,https://www.mondefootball.fr/resume/primera-division-2020-2021-sd-eibar-celta-vigo/
+2,2020/2021,1,2020-09-12,Granada CF,Athletic Club,2,0,1,7,20,2:0,0:2,https://www.mondefootball.fr/resume/primera-division-2020-2021-granada-cf-athletic-bilbao/
+3,2020/2021,1,2020-09-12,Cádiz CF,CA Osasuna,0,2,2,16,4,0:2,2:0,https://www.mondefootball.fr/resume/primera-division-2020-2021-cadiz-cf-ca-osasuna/
+4,2020/2021,1,2020-09-13,CD Alavés,Real Betis,0,1,2,14,6,0:1,1:0,https://www.mondefootball.fr/resume/primera-division-2020-2021-cd-alaves-real-betis/
+5,2020/2021,1,2020-09-13,Real Valladolid,Real Sociedad,1,1,X,9,8,1:1,1:1,https://www.mondefootball.fr/resume/primera-division-2020-2021-real-valladolid-real-sociedad/
+6,2020/2021,1,2020-09-13,Villarreal CF,SD Huesca,1,1,X,11,10,1:1,1:1,https://www.mondefootball.fr/resume/primera-division-2020-2021-villarreal-cf-sd-huesca/
+7,2020/2021,1,2020-09-13,Valencia CF,Levante UD,4,2,1,2,15,4:2,2:4,https://www.mondefootball.fr/resume/primera-division-2020-2021-valencia-cf-levante-ud/
+8,2020/2021,1,2021-01-12,Atlético Madrid,Sevilla FC,2,0,1,3,18,2:0,0:2,https://www.mondefootball.fr/resume/primera-division-2020-2021-atletico-madrid-sevilla-fc/
+9,2020/2021,1,2021-02-09,Real Madrid,Getafe CF,2,0,1,5,17,2:0,0:2,https://www.mondefootball.fr/resume/primera-division-2020-2021-real-madrid-getafe-cf/
+10,2020/2021,1,2021-02-24,FC Barcelona,Elche CF,3,0,1,1,19,3:0,0:3,https://www.mondefootball.fr/resume/primera-division-2020-2021-fc-barcelona-elche-cf/
