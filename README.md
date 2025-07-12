@@ -1,187 +1,182 @@
-# La Liga Match Prediction Dataset Builder (2014-2023)
+# Scraper La Liga - MondeFootball.fr
 
-This project builds a comprehensive dataset for predicting La Liga match outcomes (Win/Loss/Draw) using historical data from 2014 to 2023. The dataset includes advanced features based on team form, league position, head-to-head records, and other contextual factors.
+Ce projet contient des scripts Python pour extraire les données de La Liga depuis MondeFootball.fr et les sauvegarder au format CSV avec toutes les informations nécessaires pour l'analyse de matchs.
 
-## Features
+## 🎯 Objectif
 
-The dataset includes **40+ features** designed for machine learning prediction:
+Extraire les données des matchs de La Liga avec les colonnes suivantes :
+- `id`, `season`, `matchday`, `date`, `home_team`, `away_team`
+- `home_goals`, `away_goals`, `result`
+- `home_position`, `away_position` (positions au classement)
+- `home_scored_and_conceded_goals`, `away_scored_and_conceded_goals`
 
-### Basic Match Information
-- `match_id`: Unique match identifier
-- `date`: Match date and time
-- `season`: Season year
-- `matchday`: Matchday number
-- `home_team`: Home team name
-- `away_team`: Away team name
-- `result`: Match outcome (HomeWin/AwayWin/Draw)
-- `home_goals`: Goals scored by home team
-- `away_goals`: Goals scored by away team
+## 📋 Prérequis
 
-### Team Form Features (Last 5 matches)
-- **Home Team Form**: Points, goals scored/conceded, wins/draws/losses
-- **Away Team Form**: Points, goals scored/conceded, wins/draws/losses
-- **Home/Away Specific Form**: Performance at home/away venues
+- Python 3.7+
+- Environnement virtuel (recommandé)
 
-### League Position Features
-- `home_position`: Home team's league position before match
-- `away_position`: Away team's league position before match
-- `home_points`: Home team's total points before match
-- `away_points`: Away team's total points before match
-- `position_difference`: Difference in league positions
-- `points_difference`: Difference in total points
+## 🚀 Installation
 
-### Head-to-Head Features
-- `h2h_home_wins`: Home team wins in last 10 H2H matches
-- `h2h_away_wins`: Away team wins in last 10 H2H matches
-- `h2h_draws`: Draws in last 10 H2H matches
-- `h2h_home_goals`: Home team goals in H2H matches
-- `h2h_away_goals`: Away team goals in H2H matches
-
-### Contextual Features
-- `home_rest_days`: Days since home team's last match
-- `away_rest_days`: Days since away team's last match
-- `rest_difference`: Difference in rest days
-- `home_advantage`: Home advantage indicator (always 1)
-
-### Derived Features
-- `form_points_difference`: Difference in recent form points
-- `form_goal_diff_difference`: Difference in recent goal difference
-
-## Installation
-
-1. Clone the repository:
+1. **Activer l'environnement virtuel** (déjà créé dans le projet) :
 ```bash
-git clone <repository-url>
-cd score-predic
+source venv/bin/activate
 ```
 
-2. Install dependencies:
+2. **Vérifier les dépendances** (déjà installées) :
 ```bash
-pip install -r requirements.txt
+pip list | grep -E "(requests|beautifulsoup4|pandas)"
 ```
 
-## Usage
+## 📖 Utilisation
 
-### Building the Dataset
+### Script principal : `fixed_scraper.py`
 
-Run the main script to build the complete dataset:
+Ce script est **prêt à l'emploi** et extrait automatiquement les données de la **8e journée de La Liga 2024/2025**.
 
 ```bash
-python laliga_dataset_builder.py
+# Activer l'environnement virtuel
+source venv/bin/activate
+
+# Lancer le scraping
+python fixed_scraper.py
 ```
 
-This will:
-1. Fetch all La Liga matches from 2014-2023 using the OpenLigaDB API
-2. Calculate advanced features for each match
-3. Save the dataset as `laliga_dataset_2014_2023.csv`
+**Sortie attendue :**
+- Fichier CSV généré dans `laliga_data/`
+- Affichage des résultats dans le terminal
+- 10 matchs avec toutes les données du classement
 
-### Customizing the Dataset
+### Script générique : `laliga_scraper_final.py`
 
-You can modify the dataset builder by:
+Pour scraper d'autres journées (avec support extensible) :
 
-```python
-from laliga_dataset_builder import LaLigaDatasetBuilder
-
-# Initialize builder
-builder = LaLigaDatasetBuilder()
-
-# Build dataset for specific years
-dataset = builder.build_complete_dataset(start_year=2018, end_year=2022)
-
-# Save with custom name
-dataset.to_csv('custom_laliga_dataset.csv', index=False)
+```bash
+python laliga_scraper_final.py --url "https://www.mondefootball.fr/calendrier/esp-primera-division-2024-2025-spieltag/8/" --season 2024 --matchday 8 --output "custom_name.csv"
 ```
 
-## Dataset Structure
+**Paramètres :**
+- `--url` : URL de la page MondeFootball (obligatoire)
+- `--season` : Année de début de saison (défaut: 2024)
+- `--matchday` : Numéro de journée (défaut: 8)
+- `--output` : Nom du fichier de sortie (optionnel)
 
-The final dataset contains approximately **3,000+ matches** with **40+ features** each.
+## 📊 Format des données
 
-### Sample Data
+### Structure du CSV généré
+
+| Colonne | Description | Exemple |
+|---------|-------------|---------|
+| `id` | Identifiant unique du match | 1, 2, 3... |
+| `season` | Saison format YYYY/YYYY+1 | 2024/2025 |
+| `matchday` | Numéro de journée | 8 |
+| `date` | Date du match | 2024-09-27 |
+| `home_team` | Équipe domicile | Real Valladolid |
+| `away_team` | Équipe extérieur | RCD Mallorca |
+| `home_goals` | Buts équipe domicile | 1 |
+| `away_goals` | Buts équipe extérieur | 2 |
+| `result` | Résultat (1=domicile, X=nul, 2=extérieur) | 2 |
+| `home_position` | Position au classement domicile | 18 |
+| `away_position` | Position au classement extérieur | 6 |
+| `home_scored_and_conceded_goals` | Buts pour:contre domicile | 4:17 |
+| `away_scored_and_conceded_goals` | Buts pour:contre extérieur | 8:6 |
+
+### Exemple de sortie
+
+```csv
+id,season,matchday,date,home_team,away_team,home_goals,away_goals,result,home_position,away_position,home_scored_and_conceded_goals,away_scored_and_conceded_goals
+1,2024/2025,8,2024-09-27,Real Valladolid,RCD Mallorca,1,2,2,18,6,4:17,8:6
+2,2024/2025,8,2024-09-28,Getafe CF,CD Alavés,2,0,1,16,11,5:6,11:12
+3,2024/2025,8,2024-09-28,Rayo Vallecano,CD Leganés,1,1,X,9,15,9:8,5:9
 ```
-match_id | date       | home_team    | away_team   | result   | home_form_points | away_form_points | ...
-123456   | 2020-01-15 | Real Madrid  | Barcelona   | HomeWin  | 12              | 9                | ...
-123457   | 2020-01-18 | Atletico     | Valencia    | Draw     | 8               | 7                | ...
+
+## 📁 Structure du projet
+
+```
+score-predic/
+├── fixed_scraper.py           # Script principal (8e journée 2024/2025)
+├── laliga_scraper_final.py    # Script générique extensible
+├── laliga_data/               # Répertoire des fichiers CSV générés
+│   └── *.csv                  # Fichiers de données
+├── venv/                      # Environnement virtuel
+└── README.md                  # Ce fichier
 ```
 
-### Result Distribution
-- **HomeWin**: ~45% of matches
-- **Draw**: ~25% of matches  
-- **AwayWin**: ~30% of matches
+## 🎯 Données disponibles
 
-## Machine Learning Usage
+**Actuellement supporté :**
+- ✅ Journée 8 de La Liga 2024/2025 (données complètes)
+- ✅ Positions au classement
+- ✅ Statistiques buts pour/contre
+- ✅ Tous les 10 matchs de la journée
 
-The dataset is ready for machine learning. Example usage:
+**Extension future :**
+- Le script générique peut être étendu pour d'autres journées
+- Structure prête pour ajouter d'autres saisons
 
+## 💡 Fonctionnalités
+
+✅ **Extraction complète** : Toutes les colonnes demandées
+✅ **Gestion des erreurs** : Logging détaillé
+✅ **Décodage automatique** : Gestion du contenu gzip
+✅ **Normalisation** : Noms d'équipes standardisés
+✅ **CSV optimisé** : Format prêt pour l'analyse
+✅ **Classement intégré** : Positions et statistiques
+
+## 🔧 Exemple d'utilisation complète
+
+```bash
+# 1. Activer l'environnement
+source venv/bin/activate
+
+# 2. Scraper la journée 8
+python fixed_scraper.py
+
+# 3. Vérifier le fichier généré
+ls laliga_data/
+
+# 4. Voir le contenu
+head -5 laliga_data/*.csv
+```
+
+## 📈 Utilisation des données
+
+Le fichier CSV généré est parfait pour :
+- **Analyse statistique** avec pandas
+- **Modèles de prédiction** de matchs
+- **Bases de données** relationnelles
+- **Tableaux de bord** et visualisations
+
+Exemple avec pandas :
 ```python
 import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import classification_report
 
-# Load dataset
-df = pd.read_csv('laliga_dataset_2014_2023.csv')
+# Charger les données
+df = pd.read_csv('laliga_data/laliga_scraping_*.csv')
 
-# Prepare features and target
-feature_columns = [col for col in df.columns if col not in ['match_id', 'date', 'home_team', 'away_team', 'result', 'home_goals', 'away_goals']]
-X = df[feature_columns]
-y = df['result']
-
-# Split data
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-
-# Train model
-model = RandomForestClassifier(n_estimators=100, random_state=42)
-model.fit(X_train, y_train)
-
-# Evaluate
-y_pred = model.predict(X_test)
-print(classification_report(y_test, y_pred))
+# Analyser les résultats
+print(df['result'].value_counts())  # Distribution des résultats
+print(df.groupby('home_team')['home_goals'].mean())  # Moyenne buts domicile
 ```
 
-## Data Source
+## 🐛 Dépannage
 
-Data is sourced from [OpenLigaDB](https://www.openligadb.de/), a free API providing football match data.
+**Problème de module non trouvé :**
+```bash
+source venv/bin/activate
+pip install requests beautifulsoup4 pandas
+```
 
-## Key Features for Prediction
+**Problème de permissions :**
+```bash
+chmod +x fixed_scraper.py
+```
 
-Based on football analytics research, the most important features for prediction are:
+**Problème de réseau :**
+Le script gère automatiquement les timeouts et retry.
 
-1. **Recent Form** (last 5 matches points)
-2. **League Position Difference**
-3. **Head-to-Head Record**
-4. **Home/Away Specific Form**
-5. **Goal Difference Trends**
-6. **Rest Days Between Matches**
+## 📝 Notes techniques
 
-## Limitations
-
-- Data availability depends on OpenLigaDB API
-- Some early season matches may have limited historical features
-- Weather, injuries, and other external factors are not included
-- API rate limiting may slow down data collection
-
-## Future Enhancements
-
-- Add player-level statistics
-- Include transfer market values
-- Add weather data
-- Implement real-time prediction pipeline
-- Add more leagues (Premier League, Bundesliga, etc.)
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
-
-## License
-
-This project is open source and available under the MIT License.
-
-## Acknowledgments
-
-- OpenLigaDB for providing free football data
-- Football analytics research community for feature engineering insights
-- La Liga for the exciting matches that make this analysis possible! 
+- **Headers HTTP optimisés** pour éviter la détection anti-bot
+- **Session persistante** pour de meilleures performances
+- **Encoding UTF-8** pour les caractères spéciaux
+- **Timestamps** dans les noms de fichiers pour éviter les écrasements 
