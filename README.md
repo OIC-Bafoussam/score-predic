@@ -16,8 +16,12 @@ Extraire les données des matchs de La Liga avec les colonnes suivantes :
 - Environnement virtuel (recommandé)
 
 ## 🚀 Installation
+0. **Cree l'env**
+```bash
+python -m venv venv
+```
 
-1. **Activer l'environnement virtuel** (déjà créé dans le projet) :
+1. **Activer l'environnement virtuel**  :
 ```bash
 source venv/bin/activate
 ```
@@ -31,35 +35,15 @@ pip list | grep -E "(requests|beautifulsoup4|pandas)"
 
 ### Script principal : `fixed_scraper.py`
 
-Ce script est **prêt à l'emploi** et extrait automatiquement les données de la **8e journée de La Liga 2024/2025**.
-
-```bash
-# Activer l'environnement virtuel
-source venv/bin/activate
-
-# Lancer le scraping
-python fixed_scraper.py
-```
-
-**Sortie attendue :**
-- Fichier CSV généré dans `laliga_data/`
-- Affichage des résultats dans le terminal
-- 10 matchs avec toutes les données du classement
-
-### Script générique : `laliga_scraper_final.py`
-
 Pour scraper d'autres journées (avec support extensible) :
 
 ```bash
-python laliga_scraper_final.py --url "https://www.mondefootball.fr/calendrier/esp-primera-division-2024-2025-spieltag/8/" --season 2024 --matchday 8 --output "custom_name.csv"
+python laliga_scraper_final.py --auto-continue --season 2024 --delay 2.0
 ```
 
-**Paramètres :**
-- `--url` : URL de la page MondeFootball (obligatoire)
-- `--season` : Année de début de saison (défaut: 2024)
-- `--matchday` : Numéro de journée (défaut: 8)
-- `--output` : Nom du fichier de sortie (optionnel)
-
+**Paramètres :** 
+- `--season` : Année de début de saison (défaut: 2024) 
+- `---delay` : temps d'attente apres chaque journee
 ## 📊 Format des données
 
 ### Structure du CSV généré
