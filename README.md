@@ -12,23 +12,57 @@ Extraire les données des matchs de La Liga avec les colonnes suivantes :
 
 ## 📋 Prérequis
 
-- Python 3.7+
-- Environnement virtuel (recommandé)
+- Python 3.7+ installé sur votre système
+- Git (pour cloner le projet)
+- Connexion Internet
 
 ## 🚀 Installation
-0. **Cree l'env**
+
+### 1. Cloner le projet
+
 ```bash
-python -m venv venv
+git clone https://github.com/votre-username/score-predic.git
+cd score-predic
 ```
 
-1. **Activer l'environnement virtuel**  :
+### 2. Créer et activer l'environnement virtuel
+
+#### Sur Windows :
+```cmd
+# Créer l'environnement virtuel
+python -m venv venv
+
+# Activer l'environnement virtuel
+venv\Scripts\activate
+
+# Ou avec PowerShell
+venv\Scripts\Activate.ps1
+```
+
+#### Sur macOS/Linux :
 ```bash
+# Créer l'environnement virtuel
+python3 -m venv venv
+
+# Activer l'environnement virtuel
 source venv/bin/activate
 ```
 
-2. **Vérifier les dépendances** (déjà installées) :
+### 3. Installer les dépendances
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Vérifier l'installation
+
 ```bash
 pip list | grep -E "(requests|beautifulsoup4|pandas)"
+```
+
+#### Sur Windows (PowerShell) :
+```powershell
+pip list | findstr "requests beautifulsoup4 pandas"
 ```
 
 ## 📖 Utilisation
@@ -37,13 +71,20 @@ pip list | grep -E "(requests|beautifulsoup4|pandas)"
 
 Pour scraper d'autres journées (avec support extensible) :
 
+#### Sur macOS/Linux :
 ```bash
+python laliga_scraper_final.py --auto-continue --season 2024 --delay 2.0
+```
+
+#### Sur Windows :
+```cmd
 python laliga_scraper_final.py --auto-continue --season 2024 --delay 2.0
 ```
 
 **Paramètres :** 
 - `--season` : Année de début de saison (défaut: 2024) 
-- `---delay` : temps d'attente apres chaque journee
+- `--delay` : temps d'attente après chaque journée
+
 ## 📊 Format des données
 
 ### Structure du CSV généré
@@ -108,18 +149,50 @@ score-predic/
 
 ## 🔧 Exemple d'utilisation complète
 
+### Sur macOS/Linux :
 ```bash
-# 1. Activer l'environnement
+# 1. Cloner le projet
+git clone https://github.com/votre-username/score-predic.git
+cd score-predic
+
+# 2. Créer et activer l'environnement virtuel
+python3 -m venv venv
 source venv/bin/activate
 
-# 2. Scraper la journée 8
+# 3. Installer les dépendances
+pip install -r requirements.txt
+
+# 4. Scraper la journée 8
 python fixed_scraper.py
 
-# 3. Vérifier le fichier généré
+# 5. Vérifier le fichier généré
 ls laliga_data/
 
-# 4. Voir le contenu
+# 6. Voir le contenu
 head -5 laliga_data/*.csv
+```
+
+### Sur Windows :
+```cmd
+# 1. Cloner le projet
+git clone https://github.com/votre-username/score-predic.git
+cd score-predic
+
+# 2. Créer et activer l'environnement virtuel
+python -m venv venv
+venv\Scripts\activate
+
+# 3. Installer les dépendances
+pip install -r requirements.txt
+
+# 4. Scraper la journée 8
+python fixed_scraper.py
+
+# 5. Vérifier le fichier généré
+dir laliga_data\
+
+# 6. Voir le contenu
+type laliga_data\*.csv | more
 ```
 
 ## 📈 Utilisation des données
@@ -144,19 +217,42 @@ print(df.groupby('home_team')['home_goals'].mean())  # Moyenne buts domicile
 
 ## 🐛 Dépannage
 
-**Problème de module non trouvé :**
+### Problèmes courants
+
+**Module non trouvé :**
 ```bash
-source venv/bin/activate
-pip install requests beautifulsoup4 pandas
+# Vérifier que l'environnement virtuel est activé
+# Windows : venv\Scripts\activate
+# macOS/Linux : source venv/bin/activate
+
+# Réinstaller les dépendances
+pip install -r requirements.txt
 ```
 
-**Problème de permissions :**
+**Problème de permissions (macOS/Linux) :**
 ```bash
 chmod +x fixed_scraper.py
 ```
 
+**Problème avec Python sur Windows :**
+- Assurez-vous que Python est ajouté au PATH
+- Utilisez `py` au lieu de `python` si nécessaire
+
 **Problème de réseau :**
 Le script gère automatiquement les timeouts et retry.
+
+### Commandes pour désactiver l'environnement virtuel
+
+#### Sur tous les OS :
+```bash
+deactivate
+```
+
+## 🖥️ Compatibilité OS
+
+- ✅ **Windows 10/11** (Command Prompt, PowerShell)
+- ✅ **macOS** (Terminal)
+- ✅ **Linux** (Ubuntu, Debian, CentOS, etc.)
 
 ## 📝 Notes techniques
 
@@ -164,3 +260,9 @@ Le script gère automatiquement les timeouts et retry.
 - **Session persistante** pour de meilleures performances
 - **Encoding UTF-8** pour les caractères spéciaux
 - **Timestamps** dans les noms de fichiers pour éviter les écrasements 
+
+## 📚 Ressources utiles
+
+- [Documentation Python](https://docs.python.org/3/)
+- [Guide des environnements virtuels](https://docs.python.org/3/tutorial/venv.html)
+- [Installation de Git](https://git-scm.com/downloads) 
