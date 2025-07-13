@@ -1,0 +1,11 @@
+id,season,matchday,date,home_team,away_team,home_goals,away_goals,result,home_position,away_position,home_scored_and_conceded_goals,away_scored_and_conceded_goals,detail_link
+1,2017/2018,14,2017-12-01,Málaga CF,Levante UD,0,0,X,20,14,11:28,14:20,https://www.mondefootball.fr/resume/primera-division-2017-2018-malaga-cf-levante-ud/
+2,2017/2018,14,2017-12-02,FC Barcelona,RC Celta,2,2,X,1,11,36:7,26:21,https://www.mondefootball.fr/resume/primera-division-2017-2018-fc-barcelona-celta-vigo/
+3,2017/2018,14,2017-12-02,Atlético Madrid,Real Sociedad,2,1,1,3,9,23:7,28:26,https://www.mondefootball.fr/resume/primera-division-2017-2018-atletico-madrid-real-sociedad/
+4,2017/2018,14,2017-12-02,Sevilla FC,Deportivo La Coruña,2,0,1,5,17,19:14,17:27,https://www.mondefootball.fr/resume/primera-division-2017-2018-sevilla-fc-deportivo-la-coruna/
+5,2017/2018,14,2017-12-02,Athletic Club,Real Madrid,0,0,X,16,4,14:18,25:11,https://www.mondefootball.fr/resume/primera-division-2017-2018-athletic-bilbao-real-madrid/
+6,2017/2018,14,2017-12-03,CD Leganés,Villarreal CF,3,1,1,7,6,12:13,22:18,https://www.mondefootball.fr/resume/primera-division-2017-2018-cd-leganes-villarreal-cf/
+7,2017/2018,14,2017-12-03,Getafe CF,Valencia CF,1,0,1,8,2,20:15,33:13,https://www.mondefootball.fr/resume/primera-division-2017-2018-getafe-cf-valencia-cf/
+8,2017/2018,14,2017-12-03,SD Eibar,Espanyol Barcelona,3,1,1,13,15,16:27,11:18,https://www.mondefootball.fr/resume/primera-division-2017-2018-sd-eibar-espanyol-barcelona/
+9,2017/2018,14,2017-12-03,UD Las Palmas,Real Betis,1,0,1,18,10,11:32,23:28,https://www.mondefootball.fr/resume/primera-division-2017-2018-ud-las-palmas-real-betis/
+10,2017/2018,14,2017-12-04,Girona FC,CD Alavés,2,3,2,12,19,18:22,10:24,https://www.mondefootball.fr/resume/primera-division-2017-2018-girona-fc-cd-alaves/

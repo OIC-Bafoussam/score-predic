@@ -19,7 +19,7 @@ Extraire les données des matchs de La Liga avec les colonnes suivantes :
 ## 🚀 Installation
 
 ### 1. Cloner le projet
-
+ 
 ```bash
 git clone https://github.com/votre-username/score-predic.git
 cd score-predic
