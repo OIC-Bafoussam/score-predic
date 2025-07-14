@@ -1,0 +1,11 @@
+id,season,matchday,date,home_team,away_team,home_goals,away_goals,result,home_position,away_position,home_scored_and_conceded_goals,away_scored_and_conceded_goals,detail_link
+1,2013/2014,30,2014-03-25,Málaga CF,Espanyol Barcelona,1,2,2,14,9,29:38,34:35,https://www.mondefootball.fr/resume/primera-division-2013-2014-malaga-cf-espanyol-barcelona/
+2,2013/2014,30,2014-03-25,Elche CF,Athletic Club,0,0,X,15,4,24:41,52:32,https://www.mondefootball.fr/resume/primera-division-2013-2014-elche-cf-athletic-bilbao/
+3,2013/2014,30,2014-03-26,FC Barcelona,RC Celta,3,0,1,2,12,88:25,33:44,https://www.mondefootball.fr/resume/primera-division-2013-2014-fc-barcelona-celta-vigo/
+4,2013/2014,30,2014-03-26,Rayo Vallecano,CA Osasuna,1,0,1,13,17,34:63,25:51,https://www.mondefootball.fr/resume/primera-division-2013-2014-rayo-vallecano-ca-osasuna/
+5,2013/2014,30,2014-03-26,Atlético Madrid,Granada CF,1,0,1,1,11,67:21,28:40,https://www.mondefootball.fr/resume/primera-division-2013-2014-atletico-madrid-granada-cf/
+6,2013/2014,30,2014-03-26,Sevilla FC,Real Madrid,2,1,1,5,3,55:45,81:32,https://www.mondefootball.fr/resume/primera-division-2013-2014-sevilla-fc-real-madrid/
+7,2013/2014,30,2014-03-27,Getafe CF,Villarreal CF,0,1,2,18,7,26:47,50:36,https://www.mondefootball.fr/resume/primera-division-2013-2014-getafe-cf-villarreal-cf/
+8,2013/2014,30,2014-03-27,Real Sociedad,Real Valladolid,1,0,1,6,19,53:43,31:50,https://www.mondefootball.fr/resume/primera-division-2013-2014-real-sociedad-real-valladolid/
+9,2013/2014,30,2014-03-27,Levante UD,Real Betis,1,3,2,10,20,27:38,26:59,https://www.mondefootball.fr/resume/primera-division-2013-2014-levante-ud-real-betis/
+10,2013/2014,30,2014-03-27,UD Almería,Valencia CF,2,2,X,16,8,33:57,43:42,https://www.mondefootball.fr/resume/primera-division-2013-2014-ud-almeria-valencia-cf/

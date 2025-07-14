@@ -1,0 +1,11 @@
+id,season,matchday,date,home_team,away_team,home_goals,away_goals,result,home_position,away_position,home_scored_and_conceded_goals,away_scored_and_conceded_goals,detail_link
+1,2014/2015,30,2015-04-07,Atlético Madrid,Real Sociedad,2,0,1,3,11,57:23,34:40,https://www.mondefootball.fr/resume/primera-division-2014-2015-atletico-madrid-real-sociedad/
+2,2014/2015,30,2015-04-07,Levante UD,Sevilla FC,1,2,2,16,5,28:55,55:34,https://www.mondefootball.fr/resume/primera-division-2014-2015-levante-ud-sevilla-fc/
+3,2014/2015,30,2015-04-07,SD Eibar,Málaga CF,1,0,1,14,7,28:40,32:33,https://www.mondefootball.fr/resume/primera-division-2014-2015-sd-eibar-malaga-cf/
+4,2014/2015,30,2015-04-08,Deportivo La Coruña,Córdoba CF,1,1,X,17,20,25:47,21:49,https://www.mondefootball.fr/resume/primera-division-2014-2015-deportivo-la-coruna-cordoba-cf/
+5,2014/2015,30,2015-04-08,FC Barcelona,UD Almería,4,0,1,1,18,85:17,24:50,https://www.mondefootball.fr/resume/primera-division-2014-2015-fc-barcelona-ud-almeria/
+6,2014/2015,30,2015-04-08,Granada CF,RC Celta,1,1,X,19,12,20:53,30:33,https://www.mondefootball.fr/resume/primera-division-2014-2015-granada-cf-celta-vigo/
+7,2014/2015,30,2015-04-08,Rayo Vallecano,Real Madrid,0,2,2,10,2,35:53,89:27,https://www.mondefootball.fr/resume/primera-division-2014-2015-rayo-vallecano-real-madrid/
+8,2014/2015,30,2015-04-09,Athletic Club,Valencia CF,1,1,X,8,4,28:36,53:23,https://www.mondefootball.fr/resume/primera-division-2014-2015-athletic-bilbao-valencia-cf/
+9,2014/2015,30,2015-04-09,Elche CF,Getafe CF,0,1,2,15,13,24:54,27:40,https://www.mondefootball.fr/resume/primera-division-2014-2015-elche-cf-getafe-cf/
+10,2014/2015,30,2015-04-09,Villarreal CF,Espanyol Barcelona,0,3,2,6,9,43:29,36:38,https://www.mondefootball.fr/resume/primera-division-2014-2015-villarreal-cf-espanyol-barcelona/

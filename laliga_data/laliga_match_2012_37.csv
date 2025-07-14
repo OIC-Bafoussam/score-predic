@@ -1,0 +1,11 @@
+id,season,matchday,date,home_team,away_team,home_goals,away_goals,result,home_position,away_position,home_scored_and_conceded_goals,away_scored_and_conceded_goals,detail_link
+1,2012/2013,37,2013-05-26,Getafe CF,Rayo Vallecano,1,2,2,10,8,43:55,48:64,https://www.mondefootball.fr/resume/primera-division-2012-2013-getafe-cf-rayo-vallecano/
+2,2012/2013,37,2013-05-26,Valencia CF,Granada CF,1,0,1,4,16,64:50,35:54,https://www.mondefootball.fr/resume/primera-division-2012-2013-valencia-cf-granada-cf/
+3,2012/2013,37,2013-05-26,CA Osasuna,Sevilla FC,2,1,1,15,9,31:46,54:51,https://www.mondefootball.fr/resume/primera-division-2012-2013-ca-osasuna-sevilla-fc/
+4,2012/2013,37,2013-05-26,Real Sociedad,Real Madrid,3,3,X,5,2,69:49,99:40,https://www.mondefootball.fr/resume/primera-division-2012-2013-real-sociedad-real-madrid/
+5,2012/2013,37,2013-05-26,Málaga CF,Deportivo La Coruña,3,1,1,6,17,52:46,47:69,https://www.mondefootball.fr/resume/primera-division-2012-2013-malaga-cf-deportivo-la-coruna/
+6,2012/2013,37,2013-05-26,Espanyol Barcelona,FC Barcelona,0,2,2,12,1,43:51,111:39,https://www.mondefootball.fr/resume/primera-division-2012-2013-espanyol-barcelona-fc-barcelona/
+7,2012/2013,37,2013-05-26,Real Valladolid,RC Celta,0,2,2,14,18,47:54,36:52,https://www.mondefootball.fr/resume/primera-division-2012-2013-real-valladolid-celta-vigo/
+8,2012/2013,37,2013-05-26,Atlético Madrid,RCD Mallorca,0,0,X,3,20,62:30,39:70,https://www.mondefootball.fr/resume/primera-division-2012-2013-atletico-madrid-rcd-mallorca/
+9,2012/2013,37,2013-05-26,Real Betis,Real Zaragoza,4,0,1,7,19,56:55,36:59,https://www.mondefootball.fr/resume/primera-division-2012-2013-real-betis-real-zaragoza/
+10,2012/2013,37,2013-05-26,Athletic Club,Levante UD,0,1,2,13,11,42:63,39:56,https://www.mondefootball.fr/resume/primera-division-2012-2013-athletic-bilbao-levante-ud/
