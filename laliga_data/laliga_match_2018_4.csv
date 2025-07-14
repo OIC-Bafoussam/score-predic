@@ -1,0 +1,11 @@
+id,season,matchday,date,home_team,away_team,home_goals,away_goals,result,home_position,away_position,home_scored_and_conceded_goals,away_scored_and_conceded_goals,detail_link
+1,2018/2019,4,2018-09-14,SD Huesca,Rayo Vallecano,0,1,2,13,12,6:12,3:6,https://www.mondefootball.fr/resume/primera-division-2018-2019-sd-huesca-rayo-vallecano/
+2,2018/2019,4,2018-09-15,Atlético Madrid,SD Eibar,1,1,X,9,11,3:4,4:6,https://www.mondefootball.fr/resume/primera-division-2018-2019-atletico-madrid-sd-eibar/
+3,2018/2019,4,2018-09-15,Real Sociedad,FC Barcelona,1,2,2,15,1,6:7,14:3,https://www.mondefootball.fr/resume/primera-division-2018-2019-real-sociedad-fc-barcelona/
+4,2018/2019,4,2018-09-15,Valencia CF,Real Betis,0,0,X,18,10,3:5,1:3,https://www.mondefootball.fr/resume/primera-division-2018-2019-valencia-cf-real-betis/
+5,2018/2019,4,2018-09-15,Athletic Club,Real Madrid,1,1,X,8,2,6:5,11:3,https://www.mondefootball.fr/resume/primera-division-2018-2019-athletic-bilbao-real-madrid/
+6,2018/2019,4,2018-09-16,CD Leganés,Villarreal CF,0,1,2,20,16,4:9,2:3,https://www.mondefootball.fr/resume/primera-division-2018-2019-cd-leganes-villarreal-cf/
+7,2018/2019,4,2018-09-16,Espanyol Barcelona,Levante UD,1,0,1,5,17,5:3,6:5,https://www.mondefootball.fr/resume/primera-division-2018-2019-espanyol-barcelona-levante-ud/
+8,2018/2019,4,2018-09-16,Real Valladolid,CD Alavés,0,1,2,19,6,0:2,3:4,https://www.mondefootball.fr/resume/primera-division-2018-2019-real-valladolid-cd-alaves/
+9,2018/2019,4,2018-09-16,Sevilla FC,Getafe CF,0,2,2,14,4,4:4,4:2,https://www.mondefootball.fr/resume/primera-division-2018-2019-sevilla-fc-getafe-cf/
+10,2018/2019,4,2018-09-17,Girona FC,RC Celta,3,2,1,3,7,5:6,7:5,https://www.mondefootball.fr/resume/primera-division-2018-2019-girona-fc-celta-vigo/

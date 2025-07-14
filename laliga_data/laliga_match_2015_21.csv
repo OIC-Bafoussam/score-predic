@@ -1,0 +1,11 @@
+id,season,matchday,date,home_team,away_team,home_goals,away_goals,result,home_position,away_position,home_scored_and_conceded_goals,away_scored_and_conceded_goals,detail_link
+1,2015/2016,21,2016-01-22,Sporting Gijón,Real Sociedad,5,1,1,19,15,23:38,24:33,https://www.mondefootball.fr/resume/primera-division-2015-2016-sporting-gijon-real-sociedad/
+2,2015/2016,21,2016-01-23,Málaga CF,FC Barcelona,1,2,2,12,1,16:19,55:17,https://www.mondefootball.fr/resume/primera-division-2015-2016-malaga-cf-fc-barcelona/
+3,2015/2016,21,2016-01-23,Espanyol Barcelona,Villarreal CF,2,2,X,14,4,20:35,28:18,https://www.mondefootball.fr/resume/primera-division-2015-2016-espanyol-barcelona-villarreal-cf/
+4,2015/2016,21,2016-01-23,Granada CF,Getafe CF,3,2,1,16,10,24:43,26:31,https://www.mondefootball.fr/resume/primera-division-2015-2016-granada-cf-getafe-cf/
+5,2015/2016,21,2016-01-23,Rayo Vallecano,RC Celta,3,0,1,17,5,26:45,32:33,https://www.mondefootball.fr/resume/primera-division-2015-2016-rayo-vallecano-celta-vigo/
+6,2015/2016,21,2016-01-24,Athletic Club,SD Eibar,5,2,1,8,7,32:30,34:26,https://www.mondefootball.fr/resume/primera-division-2015-2016-athletic-bilbao-sd-eibar/
+7,2015/2016,21,2016-01-24,Atlético Madrid,Sevilla FC,0,0,X,2,6,30:8,28:22,https://www.mondefootball.fr/resume/primera-division-2015-2016-atletico-madrid-sevilla-fc/
+8,2015/2016,21,2016-01-24,Deportivo La Coruña,Valencia CF,1,1,X,9,11,28:25,26:22,https://www.mondefootball.fr/resume/primera-division-2015-2016-deportivo-la-coruna-valencia-cf/
+9,2015/2016,21,2016-01-24,Real Betis,Real Madrid,1,1,X,13,3,14:29,58:20,https://www.mondefootball.fr/resume/primera-division-2015-2016-real-betis-real-madrid/
+10,2015/2016,21,2016-01-25,Levante UD,UD Las Palmas,3,2,1,20,18,20:38,21:33,https://www.mondefootball.fr/resume/primera-division-2015-2016-levante-ud-ud-las-palmas/
