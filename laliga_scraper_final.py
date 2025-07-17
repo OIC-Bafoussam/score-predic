@@ -385,7 +385,10 @@ class LaLigaScraper:
                 logger.info(f"🔄 Scraping journée {matchday}/{end_matchday}...")
                 
                 # Construire l'URL pour cette journée
-                url = f"https://www.mondefootball.fr/calendrier/esp-primera-division-{season}-{season+1}-spieltag/{matchday}/"
+                if season == 2016:
+                    url = f"https://www.mondefootball.fr/calendrier/esp-primera-division-{season}-{season+1}-spieltag_2/{matchday}/"
+                else:
+                    url = f"https://www.mondefootball.fr/calendrier/esp-primera-division-{season}-{season+1}-spieltag/{matchday}/"
                 
                 # Scraper la journée
                 df = self.scrape_matchday(url, season, matchday)

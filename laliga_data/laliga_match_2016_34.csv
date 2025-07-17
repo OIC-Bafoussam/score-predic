@@ -1,0 +1,11 @@
+id,season,matchday,date,home_team,away_team,home_goals,away_goals,result,home_position,away_position,home_scored_and_conceded_goals,away_scored_and_conceded_goals,detail_link
+1,2016/2017,34,2017-04-25,Sporting Gijón,Espanyol Barcelona,1,1,X,18,9,37:67,45:44,https://www.mondefootball.fr/resume/primera-division-2016-2017-sporting-gijon-espanyol-barcelona/
+2,2016/2017,34,2017-04-25,Granada CF,Málaga CF,0,2,2,19,14,27:72,40:49,https://www.mondefootball.fr/resume/primera-division-2016-2017-granada-cf-malaga-cf/
+3,2016/2017,34,2017-04-25,Atlético Madrid,Villarreal CF,0,1,2,3,5,60:25,49:27,https://www.mondefootball.fr/resume/primera-division-2016-2017-atletico-madrid-villarreal-cf/
+4,2016/2017,34,2017-04-26,FC Barcelona,CA Osasuna,7,1,1,2,20,101:33,35:82,https://www.mondefootball.fr/resume/primera-division-2016-2017-fc-barcelona-ca-osasuna/
+5,2016/2017,34,2017-04-26,CD Leganés,UD Las Palmas,3,0,1,17,13,30:51,52:61,https://www.mondefootball.fr/resume/primera-division-2016-2017-cd-leganes-ud-las-palmas/
+6,2016/2017,34,2017-04-26,Valencia CF,Real Sociedad,2,3,2,12,7,49:59,52:47,https://www.mondefootball.fr/resume/primera-division-2016-2017-valencia-cf-real-sociedad/
+7,2016/2017,34,2017-04-26,Deportivo La Coruña,Real Madrid,2,6,2,16,1,37:57,94:39,https://www.mondefootball.fr/resume/primera-division-2016-2017-deportivo-la-coruna-real-madrid/
+8,2016/2017,34,2017-04-27,CD Alavés,SD Eibar,0,0,X,10,8,32:40,52:45,https://www.mondefootball.fr/resume/primera-division-2016-2017-cd-alaves-sd-eibar/
+9,2016/2017,34,2017-04-27,Sevilla FC,RC Celta,2,1,1,4,11,60:40,50:58,https://www.mondefootball.fr/resume/primera-division-2016-2017-sevilla-fc-celta-vigo/
+10,2016/2017,34,2017-04-27,Athletic Club,Real Betis,2,1,1,6,15,48:38,37:53,https://www.mondefootball.fr/resume/primera-division-2016-2017-athletic-bilbao-real-betis/

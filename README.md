@@ -182,6 +182,8 @@ cd score-predic
 python -m venv venv
 venv\Scripts\activate
 
+
+###python laliga_scraper_final.py --auto-continue --season 2024 --delay 2.0
 # 3. Installer les dépendances
 pip install -r requirements.txt
 
